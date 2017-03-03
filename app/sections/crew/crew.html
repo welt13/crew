@@ -1,0 +1,57 @@
+<div class="search-git">
+    <form name="searchGitForm" role="form" autocomplete="off">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <button class="btn btn-default" ng-click="generateCrew()">Generate Crew</button>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="btn btn-default" ng-click="sortM()" ng-disabled="crew.length === 0">Ordenar por Multiplicador</button>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="btn btn-default" ng-click="sortA()" ng-disabled="crew.length === 0">Ordenar por Area</button>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="btn btn-default" ng-click="sortN()" ng-disabled="crew.length === 0">Ordenar por Nombre</button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+                <thead class="head">
+                    <tr>
+                        <th class="col" data-title="'Nombre'" sortable="'name'">
+                            <span>Nombre</span>
+                        </th>
+                        <th class="col" data-title="'Raza'" sortable="'race'">
+                            <span>Raza</span>
+                        </th>
+                        <th class="col" data-title="'Posicion'" sortable="'area'">
+                            <span>Posicion</span>
+                        </th>
+                        <th class="col" data-title="'Multiplicador'" sortable="'multiplier'">
+                            <span>Multiplicador</span>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="crewMan in crew track by $index">
+                        <td class="col">
+                            <span>{{crewMan.name}}</span>
+                        </td>
+                        <td class="col">
+                            <span>{{crewMan.race}}</span>
+                        </td>
+                        <td class="col">
+                            <span>{{crewMan.area}}</span>
+                        </td>
+                        <td class="col">
+                            <span>{{crewMan.multiplier}}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

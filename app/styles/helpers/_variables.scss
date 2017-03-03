@@ -1,0 +1,16 @@
+// Colors
+$color-white: #ffffff;
+$color-gray: #eeeeee;
+$color-gray-dark: #bababa;
+$color-black: #333333;
+
+// Margin-Padding
+$size-margin-padding: 10px;                               		// 10px
+$size-margin-padding-short: $size-margin-padding / 2;     		// 5px
+$size-margin-padding-medium: $size-margin-padding + 5px;   		// 15px
+$size-margin-padding-large: $size-margin-padding * 2;    		// 20px
+$size-margin-padding-xlarge: $size-margin-padding-short * 5;    // 25px
+$size-margin-padding-xxlarge: 35px;    							// 35px
+
+// Radius
+$size-radius: $size-margin-padding-medium;    // 4px

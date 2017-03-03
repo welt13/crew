@@ -1,0 +1,9 @@
+@mixin margin-top-bottom{
+	margin-top: $size-margin-padding-medium;
+	margin-left:$size-margin-padding-medium;
+}
+
+@mixin background-font($color,$font-weight:normal){
+	background-color: $color;
+	font-weight: $font-weight;
+}

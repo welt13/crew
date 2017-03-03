@@ -1,0 +1,31 @@
+body{
+	color: $color-black;
+}
+.search-git{
+	@include margin-top-bottom;
+	.form-control{
+		padding: $size-margin-padding-short $size-margin-padding-xxlarge;
+	}
+	.float-position{
+		float: left;
+    	z-index: 99;
+    	top: $size-margin-padding-xlarge;
+    	left: $size-margin-padding-medium;
+	}
+	input{
+		border-radius: $size-radius;
+		margin-bottom: $size-margin-padding-xxlarge;
+	}
+
+	.col{
+		&.th-name{
+			width: 30%;
+		}
+		&.th-url{
+			width: 70%;
+		}
+	}
+	.col-par{
+		@include background-font($color-gray);
+	}
+}
